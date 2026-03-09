@@ -129,3 +129,8 @@ Restaurant: The Hungry Mistake | Rating: 9
 Restaurant: The Hungry Mistake | Rating: 7
 Restaurant: What The Fork | Rating: 5
 ```
+
+## 🚀 How to run it
+Clone the repo and open it in IntelliJ IDEA. Navigate to the exercise you want to run and execute the `Main.java` class. For **Ex3**, make sure `countries.txt` is inside the `Resources` folder.
+
+`git clone https://github.com/Borgesjesk/S1.03-JavaCollections.git`
