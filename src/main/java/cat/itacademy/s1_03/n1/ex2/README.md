@@ -16,6 +16,11 @@ Creates two lists of integers:
 **How ListIterator works backwards**
 By calling `listIterator(list.size())` we place the cursor at the END of the list. Then `hasPrevious()` and `previous()` move backwards through each element — the opposite of a normal iterator.
 
+## 🛠 Technologies
+- Java 21
+- Maven
+- IntelliJ IDEA
+
 ### 💻 Output
 ```
 === Original list ===
