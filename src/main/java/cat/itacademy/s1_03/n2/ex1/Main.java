@@ -11,11 +11,14 @@ public class Main {
 
     private static HashSet<Restaurant> buildRestaurantSet() {
         HashSet<Restaurant> restaurants = new HashSet<>();
-        restaurants.add(new Restaurant("Restaurant A", 9));
-        restaurants.add(new Restaurant("Restaurant B", 8));
-        restaurants.add(new Restaurant("Restaurant A", 7));
-        restaurants.add(new Restaurant("Restaurant A", 9)); // exact duplicate — should be ignored
-        restaurants.add(new Restaurant("Restaurant C", 5));
+        restaurants.add(new Restaurant("The Hungry Mistake", 9));
+        restaurants.add(new Restaurant("Sir Fries A Lot", 8));
+        restaurants.add(new Restaurant("What The Fork", 7));
+        restaurants.add(new Restaurant("In Cod We Trust", 5));
+        restaurants.add(new Restaurant("Nacho Average Place", 9));
+        restaurants.add(new Restaurant("Brunch Of Lies", 6));
+        restaurants.add(new Restaurant("The Hungry Mistake", 9)); // exact duplicate — should be ignored
+        restaurants.add(new Restaurant("What The Fork", 3)); // same name, different rating — allowed
         return restaurants;
     }
 
