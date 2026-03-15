@@ -135,10 +135,11 @@ Clone the repo and open it in IntelliJ IDEA. Navigate to the exercise you want t
 
 `git clone https://github.com/Borgesjesk/S1.03-JavaCollections.git`
 
-## 🛠️ Feedback-Driven Refactors
 
-After a code review, I implemented the following professional improvements:
+### 🛠️ Feedback-Driven Refactorings
 
-* **Environment Portability:** Replaced fragile hardcoded absolute paths with `ClassLoader.getResourceAsStream()`. By moving data files to `src/main/resources`, the application is now environment-independent.
-* **Defensive Programming:** Integrated guard clauses to validate data size before game initialization. This prevents `IndexOutOfBoundsException` and provides the user with meaningful error messages if resources are missing.
-* **Encoding Standards:** Standardized file reading using `StandardCharsets.UTF_8` to ensure compatibility with international country names and special characters.
+Following a formal code review, I implemented several architectural improvements to enhance the stability and portability of the application:
+
+* **Environment Portability:** Replaced fragile, hardcoded absolute paths with `ClassLoader.getResourceAsStream()`. By migrating data files to `src/main/resources`, the application now adheres to Maven standards and is fully environment-independent.
+* **Defensive Programming:** Integrated guard clauses to validate data integrity before game initialization. This prevents `IndexOutOfBoundsException` and provides meaningful feedback if resources are missing or insufficient.
+* **Encoding Standards:** Standardized I/O operations using `StandardCharsets.UTF_8` to ensure compatibility with international characters and special symbols in country names.
