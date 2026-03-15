@@ -134,3 +134,11 @@ Restaurant: What The Fork | Rating: 5
 Clone the repo and open it in IntelliJ IDEA. Navigate to the exercise you want to run and execute the `Main.java` class. For **Ex3**, make sure `countries.txt` is inside the `Resources` folder.
 
 `git clone https://github.com/Borgesjesk/S1.03-JavaCollections.git`
+
+## 🛠️ Feedback-Driven Refactors
+
+After a code review, I implemented the following professional improvements:
+
+* **Environment Portability:** Replaced fragile hardcoded absolute paths with `ClassLoader.getResourceAsStream()`. By moving data files to `src/main/resources`, the application is now environment-independent.
+* **Defensive Programming:** Integrated guard clauses to validate data size before game initialization. This prevents `IndexOutOfBoundsException` and provides the user with meaningful error messages if resources are missing.
+* **Encoding Standards:** Standardized file reading using `StandardCharsets.UTF_8` to ensure compatibility with international country names and special characters.
